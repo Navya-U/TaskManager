@@ -5,7 +5,7 @@
   "dependencies": {
     "bootstrap": "^5.3.3",
     "cra-template-typescript": "1.2.0",
-    "firebase": "^11.2.0",
+    "firebase": "^10.0.0",
     "firebaseui": "^6.1.0",
     "react": "^19.0.0",
     "react-beautiful-dnd": "^13.1.1",

@@ -73,10 +73,16 @@ const BatchActions: FC<BatchActionsProps> = ({
   return (
     <div>
       <button onClick={handleBatchComplete} disabled={!tasks.length}>
-        ✅ Mark as Complete
+        <span role="img" aria-label="green_right">
+          ✅
+        </span>
+        Mark as Complete
       </button>
       <button onClick={handleBatchDelete} disabled={!tasks.length}>
-        🗑️ Delete Selected
+        <span role="img" aria-label="bin">
+          🗑️
+        </span>
+        Delete Selected
       </button>
     </div>
   );

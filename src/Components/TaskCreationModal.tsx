@@ -38,6 +38,7 @@ interface TaskCreateModalProps {
   userId: string;
   onTaskAdded: () => void;
   taskId?: string;
+  tasks: Task[];
 }
 const TaskCreationModal: FC<TaskCreateModalProps> = ({
   isOpen,
@@ -45,8 +46,8 @@ const TaskCreationModal: FC<TaskCreateModalProps> = ({
   userId,
   onTaskAdded,
   taskId,
+  tasks,
 }) => {
-  const [tasks, setTasks] = useState<Task[]>([]);
   const [taskText, setTaskText] = useState('');
   const [category, setCategory] = useState('work');
   const [dueDate, setDueDate] = useState('');

@@ -35,6 +35,7 @@ interface Task {
   dueDate: string;
   status: 'todo' | 'inprogress' | 'completed';
   position: number;
+  description: string;
   activityLog: ActivityLogEntry[];
 }
 
@@ -154,6 +155,7 @@ const TaskManager: FC<{ userId: string; viewMode: string }> = ({
             userId={userId}
             onTaskAdded={fetchTasks}
             taskId={undefined}
+            tasks={tasks}
           />
         </div>
       </div>
